@@ -1,6 +1,7 @@
 # Welcome to Cicada
 
 ```We promise the best multi tool ever for IP```
-```We have ip pinger tool```
+
+**version 2.0 soon**
 
 __adding more soon!__
