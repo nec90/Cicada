@@ -1,13 +1,21 @@
 * {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
 }
 body {
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
     background: #2a272e;
 }
 h1 {
-    font-weight: 600px;
+    color: #ffffff;
+}
+h2 {
+    color: #ffffff;
+}
+h3 {
     color: #ffffff;
 }
 p {
@@ -19,14 +27,23 @@ hr {
 li {
     color: #ffffff;
 }
+
+.BIGBOLDTEXT {
+    font-size: 85px;
+}
 nav {
     background-color: #28252c;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 10px;
+    text-align: flex;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000; /* Ensures it's above other content */
+    border: 1px solid #42424254;
+}
+
+span {
+    color: #dfdfdf;
 }
 
 .button-nav {
@@ -38,10 +55,14 @@ nav {
     cursor: pointer;
     text-decoration: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 35px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
+}
+
+.logos {
+    display: flex;
 }
 
 .button {
@@ -52,11 +73,11 @@ nav {
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    border: none;
+    border: #2a272e;
     border-radius: 4px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .button-nav:hover {
@@ -64,9 +85,7 @@ nav {
 }
 
 /* Adjustments to make room for the navigation panel */
-body {
-    padding-top: 40px; /* Adjust according to the height of the navigation panel */
-}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -81,4 +100,51 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-100%);
+    filter: blur(5);
+}
+
+.show {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateX(0)
+}
+
+section {
+    place-items: center;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+}
+.sigma {
+    font-size: 13px;
+    background-color: #ffffff00;
+    border: 1px solid #424242;
+    border-radius: 25px;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    min-width: 50%;
+    min-height: 10vh;
+}
+
+.logo {
+    border: 1px solid #ffffff00;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+.logo:nth-child(4) {
+    transition-delay: 600ms;
 }
